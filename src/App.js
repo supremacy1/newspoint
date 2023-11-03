@@ -19,14 +19,10 @@ function App() {
        
           <Routes>
           
-          <Route path='/' Component={LoginForm}  />
-         <Route path='/dashbord' Component={Dashbord}  />
+          <Route path='/' Component={Navbar}  />
+         {/* <Route path='/dashbord' Component={Dashbord}  /> */}
 
-         <Route path='/dataselect' Component={Dataselect} />
-         <Route path='/login' Component={LoginForm} />
-         <Route path='/registeration' Component={RegistrationForm} />
-         <Route path='/cable' Component={Cableselect} />
-         <Route path='/airtime' Component={Airtimeselect} />
+        
 
  
        </Routes>
