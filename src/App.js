@@ -9,7 +9,7 @@ import Tech from './componet/tech';
 function App() {
   return (
     <div className="App">
-          <Navbar />
+          {/* <Navbar /> */}
           {/* <Sport /> */}
           {/* <Entertainment /> */}
           {/* <Tech/> */}
