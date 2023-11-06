@@ -39,7 +39,7 @@ const Navbar = (Props) => {
             <div className="navbar">      
             <h5>NewsPoint</h5>
             </div>
-            <div className="menu-icon" onClick={toggleMenu} >
+             <div className="menu-icon" onClick={toggleMenu} >
                     <FontAwesomeIcon icon={!showMenu ?  faBars : faXmark} /></div>
            
       {showMenu && (
