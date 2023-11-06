@@ -6,6 +6,7 @@ import Navbar from './componet/navbar';
 import Sport from './componet/sport';
 import Entertainment from './componet/entertainment';
 import Tech from './componet/tech';
+import NewsApp from './componet/news';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
           {/* <Sport /> */}
           {/* <Entertainment /> */}
           {/* <Tech/> */}
+          {/* <NewsApp /> */}
           <BrowserRouter>
              
       

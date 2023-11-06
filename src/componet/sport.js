@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState }  from "react";
 // import './navbar.css';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHouse, faFutbol,faWallet, faPlus, faXmark, faBars, faPhone, faBook, faWifi3, faTv,faLightbulb, faLocationDot,faUser, faUserCircle, faBell,faHeadset } from '@fortawesome/free-solid-svg-icons';
 import Uilcircle from '@iconscout/react-unicons/icons/uil-react'
-
+import axios from 'axios';
 import '../cssfiles/navbar.css';
 import st from '../imge/st.png'
 import back from '../imge/back.JPG'
@@ -17,17 +17,37 @@ import down from '../imge/download.jpeg'
 
 
 const Sport = (Props) => {
-const[name, setName] = useState('');
-const[age, setAge] = useState(100);
-const[isMale, setIsMale] = useState(true);
+    const [news, setNews] = useState([]);
 
-
-
+    useEffect(() => {
+      const apiKey = 'f3898d7e914440d19a6dea4ef1974e51';
+      // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+      const apiUrl = 'https://newsapi.org/v2/everything?q=tesla&from=2023-10-06&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
+  
+      axios.get(apiUrl)
+        .then(response => {
+          setNews(response.data.articles);
+        })
+        .catch(error => {
+          console.error('Error fetching news:', error);
+        });
+    }, []);
 
     return(
         <>
-        {/* <Uilcircle size="140" color="#61DAFB" /> */}
-        <div className="body">
+        <div>
+      <h1>Latest News</h1>
+      <ul>
+        {news.map((article, index) => (
+          <li key={index}>
+            <a href={article.url} target="_blank" rel="noopener noreferrer">
+              {article.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+      </div>
+        {/* <div className="body">
         <div className="container1">
             <div className="navbar">
             <h5>Sport-Point</h5>
@@ -35,13 +55,6 @@ const[isMale, setIsMale] = useState(true);
             <div className="next">
             <h6>Help/<br></br>
             support</h6> 
-                 
-        {/* <select className='select'>
-        <option value="">Switch Service</option>
-         <option value="option1">GOTV</option>
-         <option value="option2">DSTV</option>
-         <option value="option3">STARTIMES</option>
-        </select> */}
 
         </div>
         </div>
@@ -68,7 +81,7 @@ const[isMale, setIsMale] = useState(true);
         <p>House opening<br></br>
             a beautiful House opening in Owerri gone bloddy</p> 
         </div>
-        </div>
+        </div> */}
         {/* <div className="container">
             <div className="image">
         <img src={st} className="App-logo" alt="logo" />
@@ -95,12 +108,7 @@ const[isMale, setIsMale] = useState(true);
         <h4><h1>Business Growth</h1>We grow our business with you <br></br>Let get started</h4>
         </div>
         </div> */}
-        {/* <div className="flex">
-            <h3>Contact us</h3><br></br>
-            <h3>Follow us</h3><br></br>
-            <h3>Visit us</h3><br></br>
-        </div> */}
-        </div>
+     
          </>
     )
 }

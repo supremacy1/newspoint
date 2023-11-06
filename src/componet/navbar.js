@@ -31,7 +31,6 @@ const Navbar = (Props) => {
 
     return(
         <>
-        {/* <Uilcircle size="140" color="#61DAFB" /> */}
         <div className="body">
         <div className="container1">
         
@@ -60,14 +59,6 @@ const Navbar = (Props) => {
             <div className="next">
             <h6>Help/<br></br>
             support</h6> 
-                 
-        {/* <select className='select'>
-        <option value="">Switch Service</option>
-         <option value="option1">GOTV</option>
-         <option value="option2">DSTV</option>
-         <option value="option3">STARTIMES</option>
-        </select> */}
-
         </div>
         </div>
         

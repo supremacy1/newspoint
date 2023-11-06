@@ -5,8 +5,9 @@ const NewsApp = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    const apiKey = 'YOUR_API_KEY';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    const apiKey = 'f3898d7e914440d19a6dea4ef1974e51';
+    // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    const apiUrl = 'https://newsapi.org/v2/everything?q=tesla&from=2023-10-06&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
 
     axios.get(apiUrl)
       .then(response => {
@@ -34,3 +35,4 @@ const NewsApp = () => {
 };
 
 export default NewsApp;
+// f3898d7e914440d19a6dea4ef1974e51
