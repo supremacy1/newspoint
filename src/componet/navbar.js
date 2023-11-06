@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faEnvelope, faHouse, faFutbol,faWallet, faPlus, faXmark, faBars, faPhone, faBook, faWifi3, faTv,faLightbulb, faLocationDot,faUser, faUserCircle, faBell,faHeadset } from '@fortawesome/free-solid-svg-icons';
 import Uilcircle from '@iconscout/react-unicons/icons/uil-react'
+import { Link} from 'react-router-dom';
 
 import '../cssfiles/navbar.css';
 import st from '../imge/st.png'
@@ -13,7 +14,8 @@ import back from '../imge/back.JPG'
 import asian from '../imge/asian.jpg'
 import ware from '../imge/warehouse.jpeg'
 import down from '../imge/download.jpeg'
-import { faEnvelope, faHouse, faFutbol, faXmark, faBars, faPhone, faBook, faWifi3, faTv,faLightbulb, faLocationDot,faUser, faUserCircle, faBell,faHeadset } from '@fortawesome/free-solid-svg-icons';
+import {  faFutbol, faXmark, faBars, faTelevision,  } from '@fortawesome/free-solid-svg-icons';
+import Sport from "./sport";
 
 
 
@@ -34,28 +36,27 @@ const Navbar = (Props) => {
         <div className="container1">
         
    
-            <div className="navbar">
+            <div className="navbar">      
+            <h5>NewsPoint</h5>
+            </div>
             <div className="menu-icon" onClick={toggleMenu} >
                     <FontAwesomeIcon icon={!showMenu ?  faBars : faXmark} /></div>
            
       {showMenu && (
         <nav>
           <ul>
-          {/* <Link to='/dataselect' className="nav-links"><li><FontAwesomeIcon icon={faWifi3} />Data</li>
+          <Link to='/sport' className="nav-links"><li><FontAwesomeIcon icon={faFutbol} />Sport</li>
                 </Link>
-                <Link to="/airtime" className="nav-links">
-                    <li><FontAwesomeIcon icon={faPhone} /> Airtime</li>
+                <Link to="/tech" className="nav-links">
+                    <li><FontAwesomeIcon icon={faTelevision} /> Tech</li>
                 </Link>
-                <Link to="/cable" className="nav-links">
-                    <li><FontAwesomeIcon icon={faTv} />CableSub</li>
-                </Link> */}
+                <Link to="/entertainment" className="nav-links">
+                    <li><FontAwesomeIcon icon={faTelevision} />Entertainment</li>
+                </Link>
           </ul>
         </nav>
         
       )}
-      
-            <h5>NewsPoint</h5>
-            </div>
             <div className="next">
             <h6>Help/<br></br>
             support</h6> 
@@ -80,7 +81,6 @@ const Navbar = (Props) => {
         </div><br></br>
 
         <div className="contents">
-        <FontAwesomeIcon icon={faUserCircle} /> 
         <img src={ware} className="App-logo" alt="logo" />
         <div className="fins">
         <p>Expert in warehouse<br></br>

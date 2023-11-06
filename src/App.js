@@ -20,7 +20,9 @@ function App() {
           <Routes>
           
           <Route path='/' Component={Navbar}  />
-         {/* <Route path='/dashbord' Component={Dashbord}  /> */}
+         <Route path='/sport' Component={Sport}  />
+         <Route path='/tech' Component={Tech}  />
+         <Route path='/entertainment' Component={Entertainment}  />
 
         
 

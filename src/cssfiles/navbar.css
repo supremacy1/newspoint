@@ -163,6 +163,9 @@ list-style: none;
       transform: rotate(360deg);
     }
   } */
-  @media  {
-    
-  }
+ .menu-icon{
+  
+  position: absolute;
+  margin-top: -8%;
+  margin-left: 2%;
+ }
