@@ -150,6 +150,9 @@ text-decoration: none;
   text-decoration: none;
   
 }
+.news ul{
+  text-decoration: none;
+}
 /* .navbar.ul.li{
     list-style: none;
     color: azure;

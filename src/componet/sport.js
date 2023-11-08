@@ -1,10 +1,10 @@
-import React, { useEffect, useState }  from "react";
+import React, { useEffect, useState } from "react";
 // import './navbar.css';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 // import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHouse, faFutbol,faWallet, faPlus, faXmark, faBars, faPhone, faBook, faWifi3, faTv,faLightbulb, faLocationDot,faUser, faUserCircle, faBell,faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHouse, faFutbol, faWallet, faPlus, faXmark, faBars, faPhone, faBook, faWifi3, faTv, faLightbulb, faLocationDot, faUser, faUserCircle, faBell, faHeadset } from '@fortawesome/free-solid-svg-icons';
 import Uilcircle from '@iconscout/react-unicons/icons/uil-react'
 import axios from 'axios';
 import '../cssfiles/navbar.css';
@@ -17,38 +17,49 @@ import down from '../imge/download.jpeg'
 
 
 const Sport = (Props) => {
-    const [news, setNews] = useState([]);
+  const [news, setNews] = useState([]);
 
-    useEffect(() => {
-      const apiKey = 'f3898d7e914440d19a6dea4ef1974e51';
-      // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
-      // const apiUrl = 'https://newsapi.org/v2/everything?q=apple&from=2023-11-05&to=2023-11-05&sortBy=popularity&apiKey=f3898d7e914440d19a6dea4ef1974e51';
-  const apiUrl = 'https://newsapi.org/v2/everything?q=sport=2023-10-08&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
-      axios.get(apiUrl)
-        .then(response => {
-          setNews(response.data.articles);
-        })
-        .catch(error => {
-          console.error('Error fetching news:', error);
-        });
-    }, []);
+  //   useEffect(() => {
+  //     const apiKey = 'f3898d7e914440d19a6dea4ef1974e51';
+  //     // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+  //     const apiUrl = 'https://newsapi.org/v2/everything?q=apple&from=2023-11-05&to=2023-11-05&sortBy=popularity&apiKey=f3898d7e914440d19a6dea4ef1974e51';
+  // // const apiUrl = 'https://newsapi.org/v2/everything?q=sport=2023-10-08&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
+  //     axios.get(apiUrl)
+  //       .then(response => {
+  //         setNews(response.data.articles);
+  //       })
+  //       .catch(error => {
+  //         console.error('Error fetching news:', error);
+  //       });
+  //   }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://newsapi.org/v2/everything?q=apple&from=2023-11-05&to=2023-11-05&sortBy=popularity&apiKey=f3898d7e914440d19a6dea4ef1974e51');
+        setNews(response.data.articles);
+      } catch (error) {
+        console.error(error);
 
-    return(
-        <>
-        <div>
-      <h1>Latest News</h1>
-      <ul>
-        {news.map((article, index) => (
-          <li key={index}>
-            <img src={article.urlToImage} alt={article.title} />
-            <a href={article.url} target="_blank" rel="noopener noreferrer">
-              {article.title}
-            </a>
-          </li>
-        ))}
-      </ul>
+      }
+    }
+    fetchData();
+  }, [])
+  return (
+    <>
+      <div>
+        <h1>Latest News</h1>
+        <ul className="news">
+          {news.map((article, index) => (
+            <li key={index}>
+              <img src={article.urlToImage} alt={article.title} />
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                {article.title}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-        {/* <div className="body">
+      {/* <div className="body">
         <div className="container1">
             <div className="navbar">
             <h5>Sport-Point</h5>
@@ -83,7 +94,7 @@ const Sport = (Props) => {
             a beautiful House opening in Owerri gone bloddy</p> 
         </div>
         </div> */}
-        {/* <div className="container">
+      {/* <div className="container">
             <div className="image">
         <img src={st} className="App-logo" alt="logo" />
         </div>
@@ -93,7 +104,7 @@ const Sport = (Props) => {
             we have the best cameras to capture memory that last for life </h6> 
         </div>
         </div> */}
-        {/* <div className="foot">
+      {/* <div className="foot">
         <div className="f1">
         <img src={st} className="App-logo" alt="logo" />
         <h4><h1>Bonus</h1>We offer mouth-watering commision <br></br>for every refar you perform</h4>
@@ -109,8 +120,8 @@ const Sport = (Props) => {
         <h4><h1>Business Growth</h1>We grow our business with you <br></br>Let get started</h4>
         </div>
         </div> */}
-     
-         </>
-    )
+
+    </>
+  )
 }
 export default Sport;
