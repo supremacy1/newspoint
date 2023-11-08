@@ -22,8 +22,8 @@ const Sport = (Props) => {
     useEffect(() => {
       const apiKey = 'f3898d7e914440d19a6dea4ef1974e51';
       // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
-      const apiUrl = 'https://newsapi.org/v2/everything?q=tesla&from=2023-10-06&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
-  
+      // const apiUrl = 'https://newsapi.org/v2/everything?q=apple&from=2023-11-05&to=2023-11-05&sortBy=popularity&apiKey=f3898d7e914440d19a6dea4ef1974e51';
+  const apiUrl = 'https://newsapi.org/v2/everything?q=sport=2023-10-08&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
       axios.get(apiUrl)
         .then(response => {
           setNews(response.data.articles);
@@ -40,6 +40,7 @@ const Sport = (Props) => {
       <ul>
         {news.map((article, index) => (
           <li key={index}>
+            <img src={article.urlToImage} alt={article.title} />
             <a href={article.url} target="_blank" rel="noopener noreferrer">
               {article.title}
             </a>

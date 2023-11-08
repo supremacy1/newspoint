@@ -48,12 +48,7 @@ h5{
     padding: 5px;
     flex: 1;
 }
-/* ul {
-list-style: none;
-}
-.navbar.ul.li{
-    list-style: none;
-} */
+
 .next{
     
     width: 100%;
@@ -74,13 +69,6 @@ list-style: none;
     padding: 6px;
     margin: 7px;
 }
-/* .select{
-    display: flex;
-    color: rgb(18, 77, 77);
-    border: 2px solid rgb(219, 216, 216);
-    padding: 6px;
-    margin: 7px;
-} */
 .App-logo {
     justify-content: center;
     height: 50vmin;
@@ -91,11 +79,7 @@ list-style: none;
     box-shadow: 3px 5px  rgb(175, 168, 168);
    
   }
-  /* .image{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-  } */
+
   .fin{
     font-size: 30px;
    padding-left: 20px;
@@ -114,27 +98,6 @@ list-style: none;
 
    
   }
-  /* .f1{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(16, 16, 212);
-  }
-  .f2{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(241, 241, 248);
-  }
-  .f3{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(223, 223, 250);
-  } */
-  /* .flex{
-    width: 100%;
-  } */
   .flex h3{
     display: flex;
     justify-content: flex-start;
@@ -163,8 +126,31 @@ list-style: none;
     }
   } */
  .menu-icon{
-  
+  color: azure;
   position: absolute;
   margin-top: -8%;
   margin-left: 2%;
  }
+ .tog{
+  background-color: rgb(150, 11, 34);
+  color: beige;
+  position: relative;
+ 
+
+
+ 
+ }
+ ul {
+list-style: none;
+color: azure;
+text-decoration: none;
+}
+.tog a{
+  color: beige;
+  text-decoration: none;
+  
+}
+/* .navbar.ul.li{
+    list-style: none;
+    color: azure;
+} */

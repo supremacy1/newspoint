@@ -35,14 +35,16 @@ const Navbar = (Props) => {
         <div className="container1">
         
    
-            <div className="navbar">      
+            <div className="navbar">  
+                
             <h5>NewsPoint</h5>
+            
             </div>
-             <div className="menu-icon" onClick={toggleMenu} >
+            <div className="menu-icon" onClick={toggleMenu} >
                     <FontAwesomeIcon icon={!showMenu ?  faBars : faXmark} /></div>
            
       {showMenu && (
-        <nav>
+        <nav className="tog">
           <ul>
           <Link to='/sport' className="nav-links"><li><FontAwesomeIcon icon={faFutbol} />Sport</li>
                 </Link>
