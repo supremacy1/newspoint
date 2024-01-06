@@ -17,14 +17,14 @@ import down from '../imge/download.jpeg'
 
 
 const Tech = (Props) => {
-//     const [joke, setJoke] = useState("");
-//  const getjoke = () => {
-//         axios.get("https://official-joke-api.appspot.com/random_joke").then (
-//             (response) =>{ 
-//                 setJoke(response.data.setup + " ... " + response.data.punchline);
-//             }
-//         );
-//     };
+    const [joke, setJoke] = useState("");
+ const getjoke = () => {
+        axios.get("https://official-joke-api.appspot.com/random_joke").then (
+            (response) =>{ 
+                setJoke(response.data.setup + " ... " + response.data.punchline);
+            }
+        );
+    };
     // const [joke, setJoke] = useState("");
     // const getjoke = () => {
     //        axios.get("https://official-joke-api.appspot.com/random_joke").then (
@@ -39,17 +39,17 @@ const Tech = (Props) => {
 // https://jsonplaceholder.typicode.com/posts
 // gsubz.com/api/service?service=mtn
 // https://official-joke-api.appspot.com/random_joke
-const [posts, setPosts] = useState([]);
-useEffect(() => {
-    axios.get('https://official-joke-api.appspot.com/random_joke')
-      .then(response => {
-        // console.log(response);
-        setPosts(response.data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }, []);
+// const [posts, setPosts] = useState([]);
+// useEffect(() => {
+//     axios.get('https://official-joke-api.appspot.com/random_joke')
+//       .then(response => {
+//         // console.log(response);
+//         setPosts(response.data);
+//       })
+//       .catch(error => {
+//         console.error(error);
+//       });
+//   }, []);
 
     return(
         <>
