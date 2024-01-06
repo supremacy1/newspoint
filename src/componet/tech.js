@@ -43,8 +43,8 @@ const [posts, setPosts] = useState([]);
 useEffect(() => {
     axios.get('https://official-joke-api.appspot.com/random_joke')
       .then(response => {
-        console.log(response);
-        // setPosts(response.data);
+        // console.log(response);
+        setPosts(response.data);
       })
       .catch(error => {
         console.error(error);
@@ -90,8 +90,8 @@ useEffect(() => {
         <div className="fins">
         <p>Top native attires accrose the country<br></br>
             we have the best design to male you look outstanding</p> 
-            {/* <button onClick={getjoke}>jokes</button>
-       {joke} */}
+            <button onClick={getjoke}>jokes</button>
+       {joke}
         </div>
         </div><br></br>
         <div className="contents">
