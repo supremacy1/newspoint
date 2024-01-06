@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import './navbar.css';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHouse, faFutbol,faWallet, faPlus, faXmark, faBars, faPhone, faBook, faWifi3, faTv,faLightbulb, faLocationDot,faUser, faUserCircle, faBell,faHeadset } from '@fortawesome/free-solid-svg-icons';
 import Uilcircle from '@iconscout/react-unicons/icons/uil-react'
-
+import axios from "axios";
 import '../cssfiles/navbar.css';
 import st from '../imge/st.png'
 import back from '../imge/back.JPG'
@@ -17,8 +17,39 @@ import down from '../imge/download.jpeg'
 
 
 const Tech = (Props) => {
-
-
+//     const [joke, setJoke] = useState("");
+//  const getjoke = () => {
+//         axios.get("https://official-joke-api.appspot.com/random_joke").then (
+//             (response) =>{ 
+//                 setJoke(response.data.setup + " ... " + response.data.punchline);
+//             }
+//         );
+//     };
+    // const [joke, setJoke] = useState("");
+    // const getjoke = () => {
+    //        axios.get("https://official-joke-api.appspot.com/random_joke").then (
+    //            (response) =>{ 
+    //             console.log(response);
+    //               //  setJoke(response.data.setup + " ... " + response.data.punchline);
+    //            }
+    //        );
+    //    };
+// https://gsubz.com/api/testpay/
+// https://gsubz.com/api/plans?service=mtn_sme
+// https://jsonplaceholder.typicode.com/posts
+// gsubz.com/api/service?service=mtn
+// https://official-joke-api.appspot.com/random_joke
+const [posts, setPosts] = useState([]);
+useEffect(() => {
+    axios.get('https://official-joke-api.appspot.com/random_joke')
+      .then(response => {
+        console.log(response);
+        // setPosts(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
 
     return(
         <>
@@ -47,7 +78,11 @@ const Tech = (Props) => {
         <div className="fins">
         <p>Expert in warehouse<br></br>
             have gave warning concening exposing container</p> 
-        
+            <ul>
+      {/* {posts.map(post => (
+        <li key={post.id}>{post.punchline}</li>
+      ))} */}
+    </ul>
          </div>
         </div><br></br>
         <div className="contents">
@@ -55,7 +90,8 @@ const Tech = (Props) => {
         <div className="fins">
         <p>Top native attires accrose the country<br></br>
             we have the best design to male you look outstanding</p> 
-       
+            {/* <button onClick={getjoke}>jokes</button>
+       {joke} */}
         </div>
         </div><br></br>
         <div className="contents">
@@ -96,6 +132,7 @@ const Tech = (Props) => {
             <h3>Follow us</h3><br></br>
             <h3>Visit us</h3><br></br>
         </div> */}
+        
         </div>
          </>
     )

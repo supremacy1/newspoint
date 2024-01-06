@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 // import './navbar.css';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -20,8 +21,21 @@ const Entertainment = (Props) => {
 const[name, setName] = useState('');
 const[age, setAge] = useState(100);
 const[isMale, setIsMale] = useState(true);
-
-
+const [news, setNews] = useState([]);
+useEffect(() => {
+    const apiKey = 'ap_5a0f56a35271e0d1f1677612a2c2a11c';
+    // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    const apiUrl = 'https://gsubz.com/api/plans?service=mtn_sme';
+// const apiUrl = 'https://newsapi.org/v2/everything?q=sport=2023-10-08&sortBy=publishedAt&apiKey=f3898d7e914440d19a6dea4ef1974e51';
+    axios.get(apiUrl)
+      .then(response => {
+        console.log(response);
+        // setNews(response.data.articles);
+      })
+      .catch(error => {
+        console.error('Error fetching news:', error);
+      });
+  }, []);
 
 
     return(
