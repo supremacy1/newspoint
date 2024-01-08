@@ -20,14 +20,15 @@ const Tech = (Props) => {
     const [joke, setJoke] = useState("");
  const getjoke = () => {
         axios.get("https://official-joke-api.appspot.com/random_joke").then (
-            (response) =>{ 
+            (response) =>{
+                
                 setJoke(response.data.setup + " ... " + response.data.punchline);
             }
         );
     };
     // const [joke, setJoke] = useState("");
     // const getjoke = () => {
-    //        axios.get("https://official-joke-api.appspot.com/random_joke").then (
+    //        axios.get("https://official-joke-api.appspot.com/random_joke https://api-service.vtpass.com/api/service-variations?serviceID=mtn-data").then (
     //            (response) =>{ 
     //             console.log(response);
     //               //  setJoke(response.data.setup + " ... " + response.data.punchline);
@@ -90,7 +91,7 @@ const Tech = (Props) => {
         <div className="fins">
         <p>Top native attires accrose the country<br></br>
             we have the best design to male you look outstanding</p> 
-            <button onClick={getjoke}>jokes</button>
+            <button onClick={getjoke}>Click for jokes</button>
        {joke}
         </div>
         </div><br></br>
