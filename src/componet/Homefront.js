@@ -14,6 +14,9 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
         window.location.href = whatsappUrl;
     // window.location.href = `https://wa.me/${whatsappNumber}`;
   };
+  const toggleImageSize = () => {
+    setIsImageExpanded(!isImageExpanded);
+  };
 
   return (
     <div className="product-card">
@@ -23,7 +26,16 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
         className={isImageExpanded ? 'expanded-image' : ''} 
         onClick={handleImageClick} 
       /> */}
-      <img src={process.env.PUBLIC_URL + `/images/${image}`} alt={description} className='me'/>
+        {/* <img 
+        src={product.image} 
+        alt="Product" 
+        className={isImageExpanded ? 'expanded-image' : ''}
+        onClick={toggleImageSize}
+      /> */}
+      <img src={process.env.PUBLIC_URL + `/images/${image}`} alt={description}
+       className={isImageExpanded ? 'expanded-image' : ''}
+       onClick={toggleImageSize}
+      />
       <div className="product-details">
         <p className="price">Price: {price}</p>
         <p className="description">{description}</p>
