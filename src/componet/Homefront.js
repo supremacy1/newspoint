@@ -10,7 +10,7 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
       setIsImageExpanded(!isImageExpanded);
     };
   const handleWhatsAppRedirect = () => {
-    const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this product: ${description}. Price: ${price}`;
+    const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this image: ${image}. product: ${description}. Price: ${price}`;
         window.location.href = whatsappUrl;
     // window.location.href = `https://wa.me/${whatsappNumber}`;
   };
