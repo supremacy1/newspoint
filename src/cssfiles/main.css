@@ -146,3 +146,12 @@
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
   } */
+  .properties{
+    color: rgb(59, 28, 199);
+    margin-left: 5%;
+    font-size: 30px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  text-shadow: #4caf50;
+  }

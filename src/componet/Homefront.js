@@ -41,10 +41,11 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
   };
 
   return (
-   
+   <>
+
     <div className="product-card">
         {/* <NavigationBar/> */}
-    
+   
       <img src={process.env.PUBLIC_URL + `/images/${image}`} alt={description}
        className={isImageExpanded ? 'expanded-image' : ''}
        onClick={toggleImageSize}
@@ -56,6 +57,7 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
         <button onClick={handleWhatsAppRedirect}>Contact Seller</button>
       </div>
     </div>
+    </>
   );
 };
 
@@ -65,7 +67,7 @@ const ProductList = () => {
       id: 1,
       image: 'image1.jpg',
       price: '$10.00',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'salt lake',
       location: 'New York, USA',
       whatsappNumber: '1234567890'
     },
@@ -73,7 +75,7 @@ const ProductList = () => {
       id: 2,
       image: 'st.png',
       price: '$20.00',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'imotal',
       location: 'London, UK',
       whatsappNumber: '9876543210'
     },
@@ -129,7 +131,10 @@ const ProductList = () => {
   ];
 
   return (
+    <>
+      <p className='properties'>PROERTIES</p>
     <div className="product-list">
+        
       {products.map(product => (
         <ProductCard
           key={product.id}
@@ -142,7 +147,7 @@ const ProductList = () => {
       ))}
       
     </div>
-    
+    </>
   );
   
 };

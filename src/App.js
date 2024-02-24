@@ -17,7 +17,7 @@ function App() {
       id: 2,
       image: 'product2.jpg',
       price: '$20.00',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'side',
       location: 'London, UK',
       whatsappNumber: '9876543210'
     },

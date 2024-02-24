@@ -13,12 +13,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="product-card">
-         <img 
-        src={product.st} 
-        alt="Product" 
-        className={isImageExpanded ? 'expanded-image' : ''} 
-        onClick={handleImageClick} 
-      />
+       <h1>Properties</h1>
       <img src={product.image} alt="Product" />
       <div className="product-details">
         <p className="price">Price: {product.price}</p>
