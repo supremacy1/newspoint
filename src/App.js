@@ -1,16 +1,7 @@
 import logo from './logo.svg';
 // import './cssfiles/navbar.css';
 import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter } from 'react-router-dom';
-// import { SliderData } from './imge/SliderData';
-// import Navbar from './componet/navbar';
-// import Sport from './componet/sport';
-// import Entertainment from './componet/entertainment';
-// import Tech from './componet/tech';
-// import NewsApp from './componet/news';
-// import Api from './componet/api';
-// import ImageSlider from './componet/slid';
-// import Home from './componet/Home';
-// import ProductItem from './componet/ProductItem';
+import NavigationBar from './componet/NavigationBar';
 import ProductList from './componet/Homefront';
 function App() {
   const products = [
@@ -38,7 +29,7 @@ function App() {
     
     <div className="App">
   
-
+<NavigationBar />
           <BrowserRouter>
              
           

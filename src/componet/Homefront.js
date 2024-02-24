@@ -2,13 +2,11 @@ import React, {useState} from 'react';
 // import ProductCard from './ProductCard';
 // import asian from '../imge/asian.jpg'
 import '../cssfiles/main.css';
+// import NavigationBar from './componet/NavigationBar';
 
 const ProductCard = ({ image, price, description, location, whatsappNumber,product }) => {
     const [isImageExpanded, setIsImageExpanded] = useState(false);
 
-    const handleImageClick = () => {
-      setIsImageExpanded(!isImageExpanded);
-    };
   const handleWhatsAppRedirect = () => {
     const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this image: ${image}. product: ${description}. Price: ${price}`;
         window.location.href = whatsappUrl;
@@ -19,7 +17,9 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
   };
 
   return (
+   
     <div className="product-card">
+        {/* <NavigationBar/> */}
       {/* <img 
         src={product.image} 
         alt="Product" 
@@ -96,6 +96,22 @@ const ProductList = () => {
         location: 'London, UK',
         whatsappNumber: '9876543210'
       },
+      {
+        id: 2,
+        image: 'image2.jpg',
+        price: '$20.00',
+        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        location: 'London, UK',
+        whatsappNumber: '9876543210'
+      },
+      {
+        id: 2,
+        image: 'st.png',
+        price: '$20.00',
+        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        location: 'London, UK',
+        whatsappNumber: '9876543210'
+      },
     // Add more product objects here
   ];
 
@@ -111,8 +127,11 @@ const ProductList = () => {
           whatsappNumber={product.whatsappNumber}
         />
       ))}
+      
     </div>
+    
   );
+  
 };
 
 export default ProductList;

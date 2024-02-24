@@ -44,6 +44,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
   }
   
   .product-card {
@@ -129,4 +133,16 @@
   
   /* .product-card .expanded-image:hover {
     transform: scale(0.1);
+  } */
+/* 
+  @media screen and (max-width: 1000px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
   } */
