@@ -44,18 +44,7 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
    
     <div className="product-card">
         {/* <NavigationBar/> */}
-      {/* <img 
-        src={product.image} 
-        alt="Product" 
-        className={isImageExpanded ? 'expanded-image' : ''} 
-        onClick={handleImageClick} 
-      /> */}
-        {/* <img 
-        src={product.image} 
-        alt="Product" 
-        className={isImageExpanded ? 'expanded-image' : ''}
-        onClick={toggleImageSize}
-      /> */}
+    
       <img src={process.env.PUBLIC_URL + `/images/${image}`} alt={description}
        className={isImageExpanded ? 'expanded-image' : ''}
        onClick={toggleImageSize}
