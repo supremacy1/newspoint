@@ -40,7 +40,7 @@
    */
    /* styles.css */
 
-/* .product-list {
+.product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,6 +52,7 @@
     margin: 10px;
     width: 200px;
     text-align: center;
+    cursor: pointer;
   }
   
   .product-card img {
@@ -62,6 +63,7 @@
   
   .product-details {
     font-size: 14px;
+    z-index: 1000;
   }
   
   .price {
@@ -85,57 +87,46 @@
   button:hover {
     background-color: #5410d3;
   }
-   */
-   /* styles.css */
-
-.product-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .product-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .product-card .expanded-image {
-    max-width: none;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .product-card .expanded-image:hover {
-    transform: scale(1.1);
-  }
+  /* .product-card.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
   
   .product-details {
     font-size: 14px;
+    z-index: 1000; /* Ensure product details are above the overlay */
   }
   
-  .price {
-    color: #007bff;
-    font-weight: bold;
+  .product-details .product-image {
+    max-width: 100%;
+    max-height: 100%;
   }
-  
-  .location {
-    margin-top: 8px;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
+
+  .product-card .expanded-image {
+    max-width: 50%;
+    height: 50%;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  button:hover {
-    background-color: #45a049;
-  }
-  
+  /* .product-card .expanded-image:hover {
+    transform: scale(0.1);
+  } */
