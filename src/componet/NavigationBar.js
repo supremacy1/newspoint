@@ -3,6 +3,7 @@ import React from 'react';
 
 function NavigationBar() {
   return (
+    <>
     <nav className="navbar">
       <ul className="nav-list">
         <li><a href="/">Home</a></li>
@@ -11,6 +12,8 @@ function NavigationBar() {
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
+    <h1 class="color-changing-text">Urgent Sale.U!</h1>
+    </>
   );
 }
 
