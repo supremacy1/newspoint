@@ -21,8 +21,8 @@ const Tech = (Props) => {
  const getjoke = () => {
         axios.get("https://official-joke-api.appspot.com/random_joke").then (
             (response) =>{
-                
-                setJoke(response.data.setup + " ... " + response.data.punchline);
+                console.log(response);
+                setJoke(response.data.id + "...." + response.data.setup + " ... " + response.data.punchline);
             }
         );
     };

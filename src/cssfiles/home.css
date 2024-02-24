@@ -1,0 +1,126 @@
+/* .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-gallery {
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .nav-button.prev {
+    left: 10px;
+  }
+  
+  .nav-button.next {
+    right: 10px;
+  }
+  
+  .product-info {
+    text-align: center;
+  }
+  
+  .location-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .location-button:hover {
+    background-color: #0056b3;
+  }
+   */
+   /* .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    padding: 10px;
+  }
+  
+  .contact-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  } */
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    padding: 20px; /* Add some padding around the container */
+  }
+  .me{
+    width:60px;
+    height:50px
+  }
+  .image-card {
+    text-align: center; /* Center align the image and button */
+  }
+  
+  .image {
+    width: 2px; /* Set a fixed width for the images */
+    height: 1; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing between the images */
+  }
+  
+  .contact-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add some border radius */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  

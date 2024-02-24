@@ -1,30 +1,56 @@
 import logo from './logo.svg';
-import './App.css';
+// import './cssfiles/navbar.css';
 import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter } from 'react-router-dom';
-
-import Navbar from './componet/navbar';
-import Sport from './componet/sport';
-import Entertainment from './componet/entertainment';
-import Tech from './componet/tech';
-import NewsApp from './componet/news';
+// import { SliderData } from './imge/SliderData';
+// import Navbar from './componet/navbar';
+// import Sport from './componet/sport';
+// import Entertainment from './componet/entertainment';
+// import Tech from './componet/tech';
+// import NewsApp from './componet/news';
+// import Api from './componet/api';
+// import ImageSlider from './componet/slid';
+// import Home from './componet/Home';
+// import ProductItem from './componet/ProductItem';
+import ProductList from './componet/Homefront';
 function App() {
+  const products = [
+    {
+      id: 1,
+      image: 'product1.jpg',
+      price: '$10.00',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      location: 'New York, USA',
+      whatsappNumber: '1234567890'
+    },
+    {
+      id: 2,
+      image: 'product2.jpg',
+      price: '$20.00',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      location: 'London, UK',
+      whatsappNumber: '9876543210'
+    },
+    // Add more product objects here
+  ];
+  
   return (
+    
+    
     <div className="App">
-          {/* <Navbar /> */}
-          {/* <Sport /> */}
-          {/* <Entertainment /> */}
-          {/* <Tech/> */}
-          {/* <NewsApp /> */}
+  
+
           <BrowserRouter>
              
-      
+          
+          
        
           <Routes>
-          
-          <Route path='/' Component={Navbar}  />
+          <Route path='/' Component={ProductList} ></Route>
+          {/* <Route path='/' Component={Navbar}  />
          <Route path='/sport' Component={Sport}  />
          <Route path='/tech' Component={Tech}  />
          <Route path='/entertainment' Component={Entertainment}  />
+         <Route path='/api' Component={Api}  /> */}
 
         
 
@@ -33,7 +59,7 @@ function App() {
        
        
  </BrowserRouter>
-    </div>
+</div>   
   );
 }
 

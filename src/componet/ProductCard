@@ -1,0 +1,33 @@
+import React from 'react';
+import asian from '../imge/asian.jpg'
+
+const ProductCard = ({ product }) => {
+    const [isImageExpanded, setIsImageExpanded] = useState(false);
+
+    const handleImageClick = () => {
+      setIsImageExpanded(!isImageExpanded);
+    };
+  const handleWhatsAppRedirect = () => {
+    window.location.href = `https://wa.me/${product.whatsappNumber}`;
+  };
+
+  return (
+    <div className="product-card">
+         <img 
+        src={product.st} 
+        alt="Product" 
+        className={isImageExpanded ? 'expanded-image' : ''} 
+        onClick={handleImageClick} 
+      />
+      <img src={product.image} alt="Product" />
+      <div className="product-details">
+        <p className="price">Price: {product.price}</p>
+        <p className="description">{product.description}</p>
+        <p className="location">Location: {product.location}</p>
+        <button onClick={handleWhatsAppRedirect}>Contact Seller</button>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;

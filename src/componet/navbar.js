@@ -54,6 +54,9 @@ const Navbar = (Props) => {
                 <Link to="/entertainment" className="nav-links">
                     <li><FontAwesomeIcon icon={faTelevision} />Entertainment</li>
                 </Link>
+                <Link to="/api" className="nav-links">
+                    <li><FontAwesomeIcon icon={faTelevision} />Api</li>
+                </Link>
           </ul>
         </nav>
         
