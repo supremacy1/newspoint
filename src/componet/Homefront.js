@@ -7,28 +7,29 @@ import '../cssfiles/main.css';
 const ProductCard = ({ image, price, description, location, whatsappNumber,product }) => {
 
     const getProductImageBase64 = (imageFile) => {
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-      
-          reader.onload = () => {
-            resolve(reader.result.split(',')[1]); // Extract base64 string from the result
-          };
-      
-          reader.onerror = (error) => {
-            reject(error);
-          };
-      
-          reader.readAsDataURL(imageFile); // Read the image file as data URL
-        });
-      };
-      
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      resolve(reader.result.split(',')[1]); // Extract base64 string from the result
+    };
+
+    reader.onerror = (error) => {
+      reject(error);
+    };
+
+    reader.readAsDataURL(imageFile); // Read the image file as data URL
+  });
+};
+
     const [isImageExpanded, setIsImageExpanded] = useState(false);
     
 
   const handleWhatsAppRedirect = () => {
     const imageBase64 = getProductImageBase64(); 
     const encodedImage = encodeURIComponent(imageBase64);
-    const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this product: ${product.description}. Price: ${product.price}. ${encodedImage}`;
+    const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this image: ${image}. product: ${description}. Price: ${price}. ${encodedImage}`;
+    // const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this product: ${product.description}. Price: ${product.price}. ${encodedImage}`;
     window.location.href = whatsappUrl;
     // const whatsappUrl = `https://wa.me/+2347036215174/?text=I'm interested in this image: ${image}. product: ${description}. Price: ${price}`;
     //     window.location.href = whatsappUrl;
