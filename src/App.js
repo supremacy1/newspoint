@@ -3,6 +3,7 @@ import './cssfiles/NavigationBar.css';
 import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter } from 'react-router-dom';
 import NavigationBar from './componet/NavigationBar';
 import ProductList from './componet/Homefront';
+import Footer from './componet/Footer';
 function App() {
   const products = [
     {
@@ -50,6 +51,7 @@ function App() {
        
        
  </BrowserRouter>
+ <Footer />
 </div>   
   );
 }

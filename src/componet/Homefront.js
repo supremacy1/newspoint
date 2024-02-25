@@ -73,7 +73,7 @@ const ProductList = () => {
     },
     {
       id: 2,
-      image: 'st.png',
+      image: 'car1.jpg',
       price: '$20.00',
       description: 'imotal',
       location: 'London, UK',
@@ -81,7 +81,7 @@ const ProductList = () => {
     },
     {
         id: 2,
-        image: 'st.png',
+        image: 'land1.jpg',
         price: '$20.00',
         description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         location: 'London, UK',

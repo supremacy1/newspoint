@@ -1,0 +1,15 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+  }
+  a{
+    text-decoration: none;
+  }
+  
