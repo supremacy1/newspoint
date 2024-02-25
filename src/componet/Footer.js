@@ -7,18 +7,24 @@ import whatsap from '../imge/whatsapp.jpeg'; // Assuming you have your image fil
 function Footer() {
   return (
     <footer className="footer">
-      <a href="https://example.com">
+      {/* <a href="https://example.com">
         <img src={x} alt="Logo" className="logo" />
         <h7>Facebook</h7>
-      </a>
-      <a href="https://example.com">
+      </a> */}
+      <img src={x} alt="Logo" className="logo" />
+        <h7>Facebook</h7>
+      {/* <a href="https://example.com">
         <img src={facebook} alt="Logo" className="logo" />
         <h7>Facebook</h7>
-      </a>
-      <a href="https://example.com">
+      </a> */}
+      <img src={facebook} alt="Logo" className="logo" />
+        <h7>Facebook</h7>
+      {/* <a href="https://example.com">
         <img src={whatsap} alt="Logo" className="logo" />
         <h7>Facebook</h7>
-      </a>
+      </a> */}
+      <img src={whatsap} alt="Logo" className="logo" />
+        <h7>Facebook</h7>
     </footer>
   );
 }

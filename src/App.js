@@ -4,26 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter } from 'r
 import NavigationBar from './componet/NavigationBar';
 import ProductList from './componet/Homefront';
 import Footer from './componet/Footer';
+import ElectronicList from './componet/Electronic';
+import FurnitureList from './componet/Furnitures';
 function App() {
-  const products = [
-    {
-      id: 1,
-      image: 'product1.jpg',
-      price: '$10.00',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      location: 'New York, USA',
-      whatsappNumber: '1234567890'
-    },
-    {
-      id: 2,
-      image: 'product2.jpg',
-      price: '$20.00',
-      description: 'side',
-      location: 'London, UK',
-      whatsappNumber: '9876543210'
-    },
-    // Add more product objects here
-  ];
   
   return (
     
@@ -51,6 +34,9 @@ function App() {
        
        
  </BrowserRouter>
+
+ <ElectronicList />
+ <FurnitureList />
  <Footer />
 </div>   
   );

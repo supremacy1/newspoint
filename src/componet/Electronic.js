@@ -46,7 +46,7 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
     <div className="product-card">
         {/* <NavigationBar/> */}
    
-      <img src={process.env.PUBLIC_URL + `/images/${image}`} alt={description}
+      <img src={process.env.PUBLIC_URL + `/imageelectronic/${image}`} alt={description}
        className={isImageExpanded ? 'expanded-image' : ''}
        onClick={toggleImageSize}
       />
@@ -61,11 +61,11 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
   );
 };
 
-const ProductList = () => {
+const ElectronicList = () => {
   const products = [
     {
       id: 1,
-      image: 'image1.jpg',
+      image: '52.jpeg',
       price: '#10.00',
       description: '',
       location: '',
@@ -73,7 +73,7 @@ const ProductList = () => {
     },
     {
       id: 2,
-      image: 'car1.jpg',
+      image: '52.jpeg',
       price: '#20.00',
       description: '',
       location: '',
@@ -81,7 +81,7 @@ const ProductList = () => {
     },
     {
         id: 2,
-        image: 'land1.jpg',
+        image: '61.jpeg',
         price: '#20.00',
         description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         location: 'London, UK',
@@ -89,7 +89,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: '59.jpeg',
         price: '#20.00',
         description: '',
         location: '',
@@ -97,7 +97,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: '57.jpeg',
         price: '#20.00',
         description: '',
         location: '',
@@ -105,7 +105,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: '56.jpeg',
         price: '#20.00',
         description: '',
         location: '',
@@ -113,7 +113,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'download.jpeg',
+        image: '53.jpeg',
         price: '#20.00',
         description: '',
         location: '',
@@ -121,7 +121,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: '52.jpg',
         price: '#20.00',
         description: '',
         location: '',
@@ -132,7 +132,7 @@ const ProductList = () => {
 
   return (
     <>
-      <p className='properties'>PROERTIES</p>
+      <p className='properties'>Electronic</p>
     <div className="product-list">
         
       {products.map(product => (
@@ -152,4 +152,4 @@ const ProductList = () => {
   
 };
 
-export default ProductList;
+export default ElectronicList;
