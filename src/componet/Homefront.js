@@ -51,7 +51,7 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
        onClick={toggleImageSize}
       />
       <div className="product-details">
-        <p className="price">Price: {price}</p>
+        <p className="price">{price}</p>
         <p className="description">{description}</p>
         <p className="location">Location: {location}</p>
         <button onClick={handleWhatsAppRedirect}>Contact Seller</button>
