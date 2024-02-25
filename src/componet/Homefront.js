@@ -67,7 +67,7 @@ const ProductList = () => {
       id: 1,
       image: 'image1.jpg',
       price: '#10.00',
-      description: '',
+      description: 'Gold',
       location: '',
       whatsappNumber: '1234567890'
     },
@@ -75,7 +75,7 @@ const ProductList = () => {
       id: 2,
       image: 'car1.jpg',
       price: '#20.00',
-      description: '',
+      description: 'Gold',
       location: '',
       whatsappNumber: '9876543210'
     },
@@ -91,7 +91,7 @@ const ProductList = () => {
         id: 2,
         image: 'st.png',
         price: '#20.00',
-        description: '',
+        description: 'Gold',
         location: '',
         whatsappNumber: '9876543210'
       },
@@ -99,7 +99,7 @@ const ProductList = () => {
         id: 2,
         image: 'st.png',
         price: '#20.00',
-        description: '',
+        description: 'Gold',
         location: '',
         whatsappNumber: '9876543210'
       },
@@ -107,7 +107,7 @@ const ProductList = () => {
         id: 2,
         image: 'st.png',
         price: '#20.00',
-        description: '',
+        description: 'Gold',
         location: '',
         whatsappNumber: '9876543210'
       },
