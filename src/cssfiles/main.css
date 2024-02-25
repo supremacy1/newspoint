@@ -42,16 +42,17 @@
 
 .product-list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 10px;
   justify-items: center;
   }
   
   .product-card {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     padding: 15px;
     margin: 10px;
     width: 200px;

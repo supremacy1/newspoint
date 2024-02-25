@@ -26,23 +26,26 @@
   .nav-list li a:hover {
     text-decoration: underline;
   }
-  @keyframes rainbow {
+  /* @keyframes rainbow {
     0% { color: red; }
     20% { color: orange; }
     40% { color: yellow; }
     60% { color: green; }
     80% { color: blue; }
     100% { color: purple; }
-  }
+  } */
 
   /* Applying the animation to the text */
   .color-changing-text {
-    animation: rainbow 5s infinite;
+    /* animation: rainbow 5s infinite; */
     align-items: center;
     align-content: center;
    align-self: center;
    text-align: center;
+   color: rgb(33, 39, 39);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .h1{
-    background-color: red;
+    background-color: rgb(34, 31, 31);
+   
   }

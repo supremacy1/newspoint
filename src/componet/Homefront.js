@@ -132,7 +132,7 @@ const ProductList = () => {
 
   return (
     <>
-      <p className='properties'>PROERTIES</p>
+      <p className='properties'>Properties</p>
     <div className="product-list">
         
       {products.map(product => (
