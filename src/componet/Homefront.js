@@ -123,8 +123,8 @@ const ProductList = () => {
         id: 2,
         image: 'st.png',
         price: '#20.00',
-        description: '',
-        location: '',
+        description: 'd',
+        location: 'fff',
         whatsappNumber: '9876543210'
       },
     // Add more product objects here
