@@ -47,7 +47,7 @@
     justify-content: center;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1px;
+  grid-gap: 10px;
   justify-items: center;
   }
   .products {
@@ -159,7 +159,7 @@
   text-shadow: #4caf50;
  text-decoration: underline;
   } 
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     .products {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
@@ -169,7 +169,7 @@
     .products {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-  } 
+  }  */
  
   /* .product-card {
     border: 0px solid #ddd;
