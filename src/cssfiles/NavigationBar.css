@@ -42,13 +42,14 @@
     align-content: center;
    align-self: center;
    text-align: center;
-   color: rgb(33, 39, 39);
+   color: rgb(8, 201, 201);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .h1{
-    background-color: rgb(34, 31, 31);
+    background-color: rgb(240, 17, 17);
+    color: aqua;
    
-  }/* Slideshow container */
+  }
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -98,4 +99,10 @@
   height: auto;
   display: inline-block;
   margin: 0 1%; /* Adjust spacing between images */
+}
+.logo{
+ margin-left: 45%;
+ 
+  width: 50%;
+  height: 40%;
 }
