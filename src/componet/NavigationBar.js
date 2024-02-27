@@ -17,8 +17,8 @@ function NavigationBar() {
     </nav>
     {/* <Slideshow /> */}
     {/* <img src={asian} className="App-logo" alt="logo" /> */}
-    <img src={logo1} alt='logo' className='logo' />
-    {/* <h1 class="color-changing-text">Urgent Sale.U!</h1> */}
+    {/* <img src={logo1} alt='logo' className='logo' /> */}
+    <h1 class="color-changing-text">Urgent Sale.U!</h1>
     </>
   );
 }
