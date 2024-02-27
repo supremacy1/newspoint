@@ -1,4 +1,4 @@
-/* .product-card {
+.product-card {
     border: 1px solid #ddd;
     padding: 15px;
     margin: 10px;
@@ -37,11 +37,12 @@
   button:hover {
     background-color: #45a049;
   }
-   */
+  
    /* styles.css */
 
 .product-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     display: grid;
@@ -49,15 +50,27 @@
   grid-gap: 10px;
   justify-items: center;
   }
-  
-  .product-card {
-    border: 1px solid #ddd;
+  .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  }
+   
+  /* .product-card {
+    border: 0px solid #ddd;
     padding: 15px;
     margin: 10px;
     width: 200px;
     text-align: center;
     cursor: pointer;
-  }
+    
+  
+  } */
   
   .product-card img {
     max-width: 30%;
@@ -79,7 +92,7 @@
     margin-top: 8px;
   }
   
-  button {
+  /* button {
     background-color: #4caf50;
     color: white;
     padding: 8px 16px;
@@ -91,11 +104,11 @@
   button:hover {
     background-color: #5410d3;
   }
-  
+   */
   
   .product-details {
     font-size: 14px;
-    z-index: 1000; /* Ensure product details are above the overlay */
+    z-index: 1000; 
   }
   
   .product-details .product-image {
@@ -119,12 +132,12 @@
     align-items: center;
     justify-content: center;
   }
-  
+   
   /* .product-card .expanded-image:hover {
     transform: scale(0.1);
-  } */
-/* 
-  @media screen and (max-width: 1000px) {
+  }  */
+
+  /* @media screen and (max-width: 1000px) {
     .product-list {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
@@ -134,7 +147,8 @@
     .product-list {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-  } */
+  }  */
+  
   .properties{
     color: rgb(59, 28, 199);
     margin-left: 5%;
@@ -144,4 +158,27 @@
   font-weight: bolder;
   text-shadow: #4caf50;
  text-decoration: underline;
+  } 
+  /* @media screen and (max-width: 1000px) {
+    .products {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
   }
+  
+  @media screen and (max-width: 600px) {
+    .products {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }  */
+  /* .product-card {
+    border: 0px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: calc(25% - 20px); 
+    cursor: pointer;
+    max-width: 200%; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+   */
+  

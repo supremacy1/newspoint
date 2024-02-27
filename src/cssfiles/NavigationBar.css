@@ -48,4 +48,54 @@
   .h1{
     background-color: rgb(34, 31, 31);
    
+  }/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide all slides by default */
+.slide {
+  display: none;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 9s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes for fade animation */
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Display the first slide */
+.slide:first-child {
+  display: block;
+}
+
+/* Image container styles */
+.image-container {
+  width: 30%; /* Adjust as needed to fit your layout */
+  height: auto;
+  display: inline-block;
+  margin: 0 1%; /* Adjust spacing between images */
+}

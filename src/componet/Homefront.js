@@ -51,8 +51,8 @@ const ProductCard = ({ image, price, description, location, whatsappNumber,produ
        onClick={toggleImageSize}
       />
       <div className="product-details">
-        <p className="price">{price}</p>
-        <p className="description">{description}</p>
+        <p className="price">Price: {price}</p>
+        <p className="description">Product: {description}</p>
         <p className="location">Location: {location}</p>
         <button onClick={handleWhatsAppRedirect}>Contact Seller</button>
       </div>
@@ -65,7 +65,7 @@ const ProductList = () => {
   const products = [
     {
       id: 1,
-      image: 'image1.jpg',
+      image: 'car1.jpg',
       price: '#10.00',
       description: 'Gold',
       location: '',
@@ -73,7 +73,7 @@ const ProductList = () => {
     },
     {
       id: 2,
-      image: 'car1.jpg',
+      image: 'car2.jpg',
       price: '#20.00',
       description: 'Gold',
       location: '',
@@ -81,15 +81,15 @@ const ProductList = () => {
     },
     {
         id: 2,
-        image: 'land1.jpg',
+        image: 'car3.jpg',
         price: '#20.00',
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'A car is a four-wheeled vehicle typically powered by an internal combustion engine, electric motor, or a combination of both. It serves as a mode of transportation for individuals or goods',
         location: 'London, UK',
         whatsappNumber: '9876543210'
       },
       {
         id: 2,
-        image: 'st.png',
+        image: 'car4.jpg',
         price: '#20.00',
         description: 'Gold',
         location: '',
@@ -97,7 +97,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: 'car8.jp',
         price: '#20.00',
         description: 'Gold',
         location: '',
@@ -105,7 +105,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: 'car3.jpg',
         price: '#20.00',
         description: 'Gold',
         location: '',
@@ -113,7 +113,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'download.jpeg',
+        image: 'car7.jpg',
         price: '#20.00',
         description: '',
         location: '',
@@ -121,7 +121,7 @@ const ProductList = () => {
       },
       {
         id: 2,
-        image: 'st.png',
+        image: 'car4.jpg',
         price: '#20.00',
         description: 'd',
         location: 'fff',
@@ -132,7 +132,7 @@ const ProductList = () => {
 
   return (
     <>
-      <p className='properties'>Properties</p>
+      <p className='properties'>Cars</p>
     <div className="product-list">
         
       {products.map(product => (

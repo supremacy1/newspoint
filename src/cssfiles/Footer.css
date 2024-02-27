@@ -3,11 +3,21 @@
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+   align-content: space-evenly;
+
+   
+ 
   }
   
   .logo {
-    width: 30px; /* Adjust size as needed */
-    height: auto;
+    width: 20px; /* Adjust size as needed */
+    height: 20%;
+    border-radius: 10%;
+ flex-direction: column;
+   
+
   }
   a{
     text-decoration: none;

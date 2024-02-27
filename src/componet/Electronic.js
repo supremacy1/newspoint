@@ -65,7 +65,7 @@ const ElectronicList = () => {
   const products = [
     {
       id: 1,
-      image: '52.jpeg',
+      image: '52.jpg',
       price: '#10.00',
       description: '',
       location: '',
@@ -73,7 +73,7 @@ const ElectronicList = () => {
     },
     {
       id: 2,
-      image: '52.jpeg',
+      image: '52.jpg',
       price: '#20.00',
       description: '',
       location: '',
@@ -81,7 +81,7 @@ const ElectronicList = () => {
     },
     {
         id: 2,
-        image: '61.jpeg',
+        image: '61.jpg',
         price: '#20.00',
         description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         location: 'London, UK',
@@ -89,7 +89,7 @@ const ElectronicList = () => {
       },
       {
         id: 2,
-        image: '59.jpeg',
+        image: '59.jpg',
         price: '#20.00',
         description: '',
         location: '',
@@ -97,7 +97,7 @@ const ElectronicList = () => {
       },
       {
         id: 2,
-        image: '57.jpeg',
+        image: '57.jpg',
         price: '#20.00',
         description: '',
         location: '',
@@ -105,7 +105,7 @@ const ElectronicList = () => {
       },
       {
         id: 2,
-        image: '56.jpeg',
+        image: '56.jpg',
         price: '#20.00',
         description: '',
         location: '',
@@ -113,7 +113,7 @@ const ElectronicList = () => {
       },
       {
         id: 2,
-        image: '53.jpeg',
+        image: '53.jpg',
         price: '#20.00',
         description: '',
         location: '',

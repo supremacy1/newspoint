@@ -12,19 +12,19 @@ function Footer() {
         <h7>Facebook</h7>
       </a> */}
       <img src={x} alt="Logo" className="logo" />
-        <h7>Facebook</h7>
+    
       {/* <a href="https://example.com">
         <img src={facebook} alt="Logo" className="logo" />
         <h7>Facebook</h7>
       </a> */}
       <img src={facebook} alt="Logo" className="logo" />
-        <h7>Facebook</h7>
+       
       {/* <a href="https://example.com">
         <img src={whatsap} alt="Logo" className="logo" />
         <h7>Facebook</h7>
       </a> */}
       <img src={whatsap} alt="Logo" className="logo" />
-        <h7>Facebook</h7>
+       
     </footer>
   );
 }

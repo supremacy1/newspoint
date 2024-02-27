@@ -1,6 +1,7 @@
 import React from 'react';
 //import './cssfiles/NavigationBar.css'; // Import CSS file for styling
 
+import Slideshow from './slid';
 function NavigationBar() {
   return (
     <>
@@ -12,6 +13,7 @@ function NavigationBar() {
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
+    {/* <Slideshow /> */}
     <h1 class="color-changing-text">Urgent Sale.U!</h1>
     </>
   );
