@@ -205,7 +205,7 @@
   } */
   .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted min-width for images */
+    grid-template-columns: repeat(auto-fit, minmax(100px, -7fr)); /* Adjusted min-width for images */
     grid-gap: 10px;
     justify-items: center;
   }
