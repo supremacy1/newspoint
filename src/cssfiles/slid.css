@@ -61,6 +61,13 @@
   75% { opacity: 1; }
   100% { opacity: 0; }
 } 
+.company {
+  display: flex;
+  justify-content: center;
+/* margin-left: 30%; */
+width: 30%;
+
+}
 /* .slideshow-container {
     position: relative;
     max-width: 400px;

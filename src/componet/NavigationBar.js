@@ -1,7 +1,7 @@
 import React from 'react';
 import '../cssfiles/NavigationBar.css';
 //import './cssfiles/NavigationBar.css'; // Import CSS file for styling
-import logo1 from '../imge/logo1.jpg'
+// import logo1 from '../imge/logo1.jpg'
 import asian from '../imge/asian.jpg'
 import Slideshow from './slid';
 function NavigationBar() {
@@ -17,8 +17,9 @@ function NavigationBar() {
     </nav>
     {/* <Slideshow /> */}
     {/* <img src={asian} className="App-logo" alt="logo" /> */}
-    {/* <img src={logo1} alt='logo' className='logo' /> */}
-    <h1 class="color-changing-text">Urgent Sale.U!</h1>
+
+    {/* <img src={logo1}  className='company' alt='loo' /> */}
+    {/* <h1 class="color-changing-text">Urgent Sale.U!</h1> */}
     </>
   );
 }

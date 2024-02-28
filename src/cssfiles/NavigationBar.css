@@ -100,8 +100,10 @@
   display: inline-block;
   margin: 0 1%; /* Adjust spacing between images */
 }
-/* .logo{
- margin-left: 45%;
-width: 50%;
-height: 100%;
-} */
+.company {
+  display: flex;
+  justify-content: center;
+/* margin-left: 30%; */
+width: 30%;
+
+}

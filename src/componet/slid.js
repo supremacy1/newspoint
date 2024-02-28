@@ -102,6 +102,7 @@ import slid5 from '../imge/slid5.jpg';
 import slid6 from '../imge/slid6.jpg';
 import slid7 from '../imge/slid7.jpg';
 import slid9 from '../imge/slid9.jpg';
+import logo1 from '../imge/logo1.jpg'
 
 const Slideshow = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -119,9 +120,12 @@ const Slideshow = () => {
 
   // You can style this component as per your requirement
   return (
+    <>
+     <img src={logo1}  className='company' alt='loo' />
     <div className='slid-images'>
       <img src={images[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
     </div>
+    </>
   );
 };
 

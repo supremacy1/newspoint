@@ -1,3 +1,63 @@
+ /* .product-card {
+    border: 0px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    
+  
+  } */
+    /* button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #5410d3;
+  }
+   */
+    /* .product-card .expanded-image:hover {
+    transform: scale(0.1);
+  }  */
+
+  /* @media screen and (max-width: 1000px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }  */
+    /* @media screen and (max-width: 1000px) {
+    .products {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .products {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }  */
+  /* .product-card {
+    border: 0px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: calc(25% - 20px); 
+    cursor: pointer;
+    max-width: 200%; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+   */
 .product-card {
     border: 1px solid #ddd;
     padding: 15px;
@@ -38,7 +98,7 @@
     background-color: #45a049;
   }
   
-   /* styles.css */
+ 
 
 .product-list {
     display: flex;
@@ -56,21 +116,11 @@
     flex-wrap: wrap;
     justify-content: center;
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 10px;
   justify-items: center;
   }
    
-  /* .product-card {
-    border: 0px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    width: 200px;
-    text-align: center;
-    cursor: pointer;
-    
-  
-  } */
   
   .product-card img {
     max-width: 30%;
@@ -92,19 +142,7 @@
     margin-top: 8px;
   }
   
-  /* button {
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #5410d3;
-  }
-   */
+
   
   .product-details {
     font-size: 14px;
@@ -117,8 +155,8 @@
   }
 
   .product-card .expanded-image {
-    max-width: 100%;
-    height: 50%;
+    max-width: fit-content;
+    height: fit-content;
     cursor: pointer;
     transition: transform 0.3s ease;
      position: fixed;
@@ -133,21 +171,7 @@
     justify-content: center;
   }
    
-  /* .product-card .expanded-image:hover {
-    transform: scale(0.1);
-  }  */
-
-  /* @media screen and (max-width: 1000px) {
-    .product-list {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .product-list {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-  }  */
+ 
   
   .properties{
     color: rgb(59, 28, 199);
@@ -159,26 +183,23 @@
   text-shadow: #4caf50;
  text-decoration: underline;
   } 
-  /* @media screen and (max-width: 1000px) {
-    .products {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* Four columns for mobile */
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .products {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  @media only screen and (min-width: 1024px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* Five columns for laptop */
     }
-  }  */
-  /* .product-card {
-    border: 0px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    width: calc(25% - 20px); 
-    cursor: pointer;
-    max-width: 200%; 
-    height: auto;
-    margin-bottom: 10px;
   }
-   */
   
