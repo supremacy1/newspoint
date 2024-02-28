@@ -121,7 +121,7 @@ const Slideshow = () => {
   // You can style this component as per your requirement
   return (
     <>
-     <img src={logo1}  className='company' alt='loo' />
+     {/* <img src={logo1}  className='company' alt='loo' /> */}
     <div className='slid-images'>
       <img src={images[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
     </div>

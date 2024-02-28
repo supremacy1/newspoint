@@ -7,6 +7,7 @@ import Footer from './componet/Footer';
 import ElectronicList from './componet/Electronic';
 import FurnitureList from './componet/Furnitures';
 import Slideshow from './componet/slid';
+import Logo from './componet/logo';
 function App() {
  
   
@@ -15,7 +16,7 @@ function App() {
     
     <div className="App">
 
-  
+  <Logo />
 <NavigationBar />
 <Slideshow />
           <BrowserRouter>
